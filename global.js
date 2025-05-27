@@ -14,19 +14,19 @@ function toggleMenu() {
     }
   }
 
-    function closeMenu() {
-      document.getElementById('mobileMenu').classList.remove('active');
-      document.getElementById('mobileOverlay').classList.remove('active');
-      document.querySelector('.logo').classList.remove('animate-logo');
-      document.removeEventListener('click', handleOutsideClick);
-    }
+function closeMenu() {
+  document.getElementById('mobileMenu').classList.remove('active');
+  document.getElementById('mobileOverlay').classList.remove('active');
+  document.querySelector('.logo').classList.remove('animate-logo');
+  document.removeEventListener('click', handleOutsideClick);
+}
 
   
-    function handleOutsideClick(event) {
-      const menu = document.getElementById('mobileMenu');
-      const icon = document.getElementById('hamburgerIcon');
-  
-      if (!menu.contains(event.target) && !icon.contains(event.target)) {
-        closeMenu();
-      }
-    }
+function handleOutsideClick(event) {
+  const menu = document.getElementById('mobileMenu');
+  const icon = document.getElementById('hamburgerIcon');
+
+  if (!menu.contains(event.target) && !icon.contains(event.target)) {
+    closeMenu();
+  }
+}
