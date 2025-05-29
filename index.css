@@ -1,6 +1,6 @@
 #section1 {
     position: relative;
-    max-height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
@@ -16,8 +16,17 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.05; 
+    opacity: 0.2; 
+    filter: blur(1.5px);
     z-index: -1; 
+}
+
+#section1 p{
+    color: white;
+}
+
+#section1 h2{
+    color: white;
 }
 
 .part1 {
@@ -34,16 +43,15 @@
     gap: 8px;
 }
 
-.yellow {
-    color: #F9C80E;
+.green {
+    color: #2ECC71;
 }
 
-/* The key here is setting order: -1 to position .me at the top */
 .me {
     width: 100%;
     margin: 0 auto;
     display: flex;
-    order: -1;  /* Moves the image above other .part1 content */
+    order: -1; 
 }
 
 .part1 h1 {
@@ -55,9 +63,28 @@
     margin-bottom: -20px; 
 }
 
+#section2{
+    background-color: white;
+}
+
+#section2 p{
+    color: black;
+}
+
+#section2 h2{
+    color: #128743;
+}
+
+.me2{
+    width: 100%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
 @media (max-width: 768px) { /* Tablet & Mobile */
+
     .part1 {
-        padding: 10px;
+        padding: 0;
         gap: 15px;
         margin-top: 5%; 
     }

@@ -5,14 +5,20 @@
     margin: 0 10%;
     padding: 3% 0;
     max-width: 1800px;
+    align-items: center;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1140px){
     .grid {
         grid-template-columns: 1fr; 
-        margin: 0 2%;
+        margin: 0 auto;
         display: flex;
         flex-direction: column-reverse;
+        padding: 10% 4%;
+    }
+
+    #section2 .grid {
+        flex-direction: column;
     }
 
     .grid h2{

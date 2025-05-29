@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poly&display=swap');
 
 *{
   box-sizing: border-box;
@@ -12,9 +13,40 @@ html {
   scroll-behavior: smooth;
 }
 
+h1 {
+font-size: 2.25rem; 
+font-weight: 500;
+color: #ffffff; 
+}
+
+h2 {
+font-size: 1.75rem; 
+font-weight: 500; 
+color:  #128743;
+}
+
+h3 {
+font-size: 1.375rem; 
+font-weight: 500; 
+color: #128743;
+margin-bottom: 1rem;
+}
+
+p {
+font-size: 1rem; 
+font-weight: 50;
+color: black; 
+}
+
+small {
+font-size: 0.75rem; 
+font-weight: 50;
+color: black; 
+}
+
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(131.89deg, #633d79, #321e4d);
+  background: rgb(0, 0, 0);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -32,7 +64,7 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #321E4D;
+  background: #000000;
   color: white;
   width: 100%;
   gap: 30%;
@@ -46,6 +78,10 @@ body::-webkit-scrollbar {
   margin: 0;
   gap: 2.75rem;
   padding: 1.25rem 0;
+}
+
+.navbar p{
+  color: #ffffff;
 }
 
 .navbar li {
@@ -111,7 +147,7 @@ body::-webkit-scrollbar {
   left: 1.35rem;
   width: 16.875rem;
   height: 38.0625rem;
-  background: #321E4D;
+  background: #000000;
   box-shadow: 0px 0px 30px 7px rgba(0, 0, 0, 0.13);
   border-radius: 1.25rem;
   z-index: 1000;
@@ -134,7 +170,7 @@ body::-webkit-scrollbar {
   left: -1px;
   width: 101%;
   height: auto;
-  background: #321E4D;
+  background: #000000;
   background-size: cover;
   z-index: 0;
   pointer-events: none;
@@ -189,7 +225,6 @@ body::-webkit-scrollbar {
   list-style: none;
   padding-left: 1.875rem;
   margin-top: 0rem;
-
 }
 
 /* Overlay behind mobile menu */
@@ -249,40 +284,79 @@ img {
         brightness(100%);
 }
 
-  h1 {
-  font-size: 2.25rem; 
-  font-weight: 500;
-  color: #ffffff; 
-  }
-
-  h2 {
-  font-size: 1.75rem; 
-  font-weight: 500; 
+.footernav a{
+  text-decoration: none; 
   color: #ffffff;
-  }
+}
 
-  h3 {
-  font-size: 1.375rem; 
-  font-weight: 500; 
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+    padding: 0% 4%;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+footer p{
   color: #ffffff;
-  }
+}
 
-  p {
-  font-size: 1rem; 
-  font-weight: 50;
-  color: #ffffff; 
-  }
+footer .top {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin: 3% auto; 
+    justify-content: center;
+    align-items: center;
+}
 
-  small {
-  font-size: 0.75rem; 
-  font-weight: 50;
-  color: #ffffff; 
-  }
+footer img {
+    width: 3.063rem;
+}
 
+.footernav {
+    display: flex;
+    border-top: 1px solid white;
+    padding: 4% 0;
+    width: 100%; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.footernav ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+    justify-content: center;
+    gap: 3%; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    flex-wrap: wrap; 
+}
+
+.footernav ul li {
+    padding: 0 10px; 
+}
+
+
+.footernav a {
+    text-decoration: none;
+    color: #ffffff;
+    white-space: nowrap; 
+}
 
 
 /* Mobile Query */
 @media (max-width: 748px) {
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
     h1 {
         font-size: 3rem; 
     }
@@ -309,9 +383,14 @@ img {
 
     .navbar {
         justify-content: center;
-        margin-bottom: 45px;
+        margin-bottom: 0;
         gap: 0;
     }
+
+    .navbar a{
+        color: white;
+    }
+
 
     .navbar ul {
         justify-content: center;
@@ -324,6 +403,9 @@ img {
     .navbar li:not(.logo-li) {
         display: none;
     }
+    footer .navbar li:not(.logo-li) {
+        display: flex;
+    }
 
     .logo-li {
         margin: 0;
@@ -333,4 +415,34 @@ img {
         margin: 0; 
         justify-content: center;
     }
-}
+
+    .footernav{
+      margin: 0  auto;
+    }
+
+    footer .top {
+        margin: 5% auto; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footernav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+        align-items: center;
+        justify-content: center;
+        gap: 5%; 
+        list-style: none; 
+        padding: 0; 
+        margin: 0 auto; 
+        flex-wrap: wrap; 
+    }
+
+    .footernav li {
+        text-align: left;
+        gap: 10%;
+        margin: 2% 0;
+    }
+
+} 

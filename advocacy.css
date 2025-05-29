@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poly&display=swap');
+
+img{
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+#section1 {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#section1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/adv/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+#section1 .grid{
+    padding-top: 10%;
+    padding-bottom: 25%;
+}
+#section1 h1{
+    font-family: 'Poly', serif;
+    margin-bottom: 5%;
+    font-size: 54px;
+}
+
+#section1 p{
+    color: white;
+}
+
+.info{
+    width: 80%;
+}
+
+#section2{
+    background-color: black;
+    height: auto;
+}
+
+#section2 h3{
+    color: #2ECC71;
+    margin-bottom: 1rem;
+}
+
+#section2 p{
+    color: white;
+}
+
+#section2 .info{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 5% 0;
+    width: 50%;
+}
+
+#section3{
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#section3 .grid{
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#section3 .method{
+    width: 50%;
+}
+
+#section4{
+    background: black;
+    display: flex;
+    flex-direction: column;
+}
+
+#section4 .grid{
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#section4 .method{
+    width: 100%;
+}
+
+#section4 ul{
+    color: white;
+}
+
+#section4 h3{
+    color: #2ECC71;
+}
+
+.method{
+    margin-left: auto;
+}
+
+.list ul{
+    margin-left: 10%;
+}
+
+.list li{
+    margin-bottom: 5%;
+}
+
+#section5{
+    background-image: url('img/adv/conc.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#section5 p{
+    color: white;
+}
+
+#section5 .grid{
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10% 0;
+}
+
+@media (max-width: 768px) {
+    #section1{
+        height: fit-content;
+    }
+
+    .info{
+        width: 100%;
+    }
+
+    #section1 .grid{
+        padding-top: 10%;
+        padding-bottom: 25%;
+    }
+
+    #section1 h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #section1 p{
+        color: white;
+    }
+
+    #section2 .info{
+        width: 100%;
+        padding: 10% 4.5%;
+        margin: 0;
+    }
+
+    .list h3{
+        text-align: center;
+    }
+
+    .list ul{
+        width: 80%;
+    }
+
+    #section3 .grid{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #section3 .method{
+        width: 100%;
+    }
+
+    #section4 .grid{
+        width: 100%;
+    }
+
+    #section4 .method{
+        display: flex;
+        margin: 10% 2.5%;
+    }
+
+    #section5 .grid{
+        display: flex;
+        width: 100%;
+        margin: 0 4%;
+    }
+}   
