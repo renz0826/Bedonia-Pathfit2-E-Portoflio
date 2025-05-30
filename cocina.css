@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poly&display=swap');
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    
+    30% {
+        transform: translateX(0);
+    }
+    
+    35% {
+        transform: translateX(-100%);
+    }
+    
+    65% {
+        transform: translateX(-100%);
+    }
+    
+    70% {
+        transform: translateX(-200%);
+    }
+    
+    90% {
+        transform: translateX(-200%);
+    }
+    
+    100% {
+        transform: translateX(0); 
+    }
+}
+
+#section1 {
+  background-color: white;
+}
+
+.slider {
+  overflow: hidden;
+  width: 100%;
+  border: 3px solid black;
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  animation: slide 16s infinite;
+}
+
+.item {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 80%;
+    gap: 0.5rem;
+    margin-top: -4rem;
+    margin-left: 5.1rem;
+}
+
+#section1 h1{
+    font-family: 'Poly', serif;
+    color: black;
+    font-size: 96px;
+}
+
+#section1 h2{
+    color: rgb(0, 0, 0);
+    font-size: 36;
+}
+
+#section2{
+    background: linear-gradient(to bottom, white 50%, rgb(0, 0, 0) 50%);
+    justify-content: center;
+    padding: 5% 0;
+}
+
+#section2 h2{
+    padding: 5% 0;
+    text-align: center;
+}
+
+.card{
+    background-color: white;
+    margin-bottom: 5%;
+    width: 20%;
+    height: auto;
+    border-radius: 8%;
+    box-shadow: 104px 217px 67px rgba(0, 0, 0, 0), 67px 139px 62px rgba(0, 0, 0, 0.01), 38px 78px 52px rgba(0, 0, 0, 0.05), 17px 35px 39px rgba(0, 0, 0, 0.09), 4px 9px 21px rgba(0, 0, 0, 0.1);
+}
+
+.card img{
+    width: 100%;
+}
+
+.card p{
+    padding: 15% 20%;
+    text-align: center;
+}
+
+#section3{
+    background-color: white;
+}
+
+#section3 .prep{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#section3 h2{
+    padding: 4% 0;
+    text-align: center;
+}
+
+.list{
+    margin-bottom: 4rem;
+}
+
+#section3 ol {
+      margin: 1rem 0;
+      padding-left: 2rem;
+    }
+
+#section3 ol > li {
+      margin-bottom: 1.5rem;
+    }
+
+
+#section3 ol ol {
+      margin: 0.5rem 0 1rem 2rem;
+      padding-left: 1rem;
+    }
+    
+
+#section3 ol ol > li {
+      margin-bottom: 1rem;
+    }
+
+
+@media (max-width: 768px) {
+    .text{
+        width: 100%;
+        gap: 1rem;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    #section1 h1{
+        font-size: 4rem;
+        text-align: center;
+        margin-bottom: -8%;
+    }
+
+    #section1 h2{
+        font-size: 2.25rem;
+        text-align: center;
+    }
+
+    #section2 h2{
+        padding: 10% 0;
+    } 
+
+    .card{
+        width: 75%;
+    }
+
+    #section3 .prep{
+        width: 100%;
+        padding: 0 4%;
+    }
+}

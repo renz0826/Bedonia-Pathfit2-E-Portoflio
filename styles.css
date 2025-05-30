@@ -185,6 +185,10 @@ body::-webkit-scrollbar {
     align-items: center;
 }
 
+.logomob p{
+    color: white;
+    
+}
 .line{
     border: none; 
     border-top: 0.01rem solid #e7e7e7;
