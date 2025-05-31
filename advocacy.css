@@ -195,6 +195,6 @@
     #section5 .grid{
         display: flex;
         width: 100%;
-        margin: 0 4%;
+        padding: 5% 4%;
     }
 }   

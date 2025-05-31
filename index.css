@@ -97,7 +97,7 @@
     .name {
         flex-direction: column;
         gap: 1px;
-        margin: 3% 0;
+        padding: 3% 0;
     }
 
     .part1 h2 {

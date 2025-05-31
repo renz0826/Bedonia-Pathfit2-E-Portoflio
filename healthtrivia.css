@@ -65,7 +65,7 @@
     
     .card{
         width: 110%;
-        margin-left: 20%;
+        margin-left: 0;
         margin-bottom: -8%;
     }
 
@@ -101,6 +101,7 @@
     }
 
     #section2 .card{
-        margin-left: 20%;
+        margin-left: 0;
+        padding-left: 15%;
     }
 }
