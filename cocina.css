@@ -141,7 +141,6 @@
       margin-bottom: 1rem;
     }
 
-
 @media (max-width: 768px) {
     .text{
         width: 100%;
@@ -173,4 +172,33 @@
         width: 100%;
         padding: 0 4%;
     }
+
+    .list{
+        padding: 0 4%;
+    }
+
+    #section3 ol {
+      margin: 1rem 0;
+      padding-left: 0rem;
+    }
+
+    #section3 ol > li {
+        margin-bottom: 1.5rem;
+    }
+
+
+    #section3 ol ol {
+        margin: 0.5rem 0 1rem 2rem;
+        padding-left: 1rem;
+    }
+        
+
+    #section3 ol ol > li {
+        margin-bottom: 1rem;
+    }
+
+    .video-container{
+        height: 186px;
+    }
+
 }

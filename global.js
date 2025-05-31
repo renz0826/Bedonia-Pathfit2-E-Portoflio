@@ -30,3 +30,5 @@ function handleOutsideClick(event) {
     closeMenu();
   }
 }
+
+
